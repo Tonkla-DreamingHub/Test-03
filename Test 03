@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Demon Cheats",
+   Name = "DM Mods",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Root Bypass",
+   LoadingTitle = "Kaitun Script",
    LoadingSubtitle = "by Demon Cheats",
    ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
@@ -35,14 +35,5 @@ local Window = Rayfield:CreateWindow({
       Key = {"1"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-local Tab = Window:CreateTab("Bypass Emulador", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Bypass Emulador")
-local Toggle = Tab:CreateToggle({
-   Name = "Root Bypass",
-   CurrentValue = false,
-   Flag = "Root Bypass", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   
-   -- The variable (Value) is a boolean on whether the toggle is true or false
-   end,
-})
+local Tab = Window:CreateTab("General", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Auto Kaitun")
